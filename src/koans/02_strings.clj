@@ -13,7 +13,7 @@
   (= "Cool right?" (str "Cool" " right?"))
 
   "You can even get certain characters"
-  (= \C (get "Characters" 0))
+  (= \a (get "Characters" 4))
 
   "Or even count the characters"
   (= 11 (count "Hello World"))
@@ -61,7 +61,7 @@
   (= true (string? "hello"))
 
   "Some strings may be blank"
-  (= true (string/blank? ""))
+  (= true (string/blank? "  \n\t\r  "))
 
   "Even if at first glance they aren't"
   (= true (string/blank? " \n \t  "))
